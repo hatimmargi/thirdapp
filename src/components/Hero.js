@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="hero">
-      <img src='./imgs/Group 77.png' alt="reactlogo" />
+      <img src="./imgs/Group 77.png" alt="reactlogo" />
       <div className="hero-text">
         <h1>Online Experiences</h1>
         <p>

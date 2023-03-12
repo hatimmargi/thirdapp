@@ -32,7 +32,7 @@ nav {
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-ls: center;
   justify-content: center;
   margin-top: 48px;
 }
@@ -53,18 +53,38 @@ nav {
   color: rgba(34, 34, 34, 1);
 }
 .cards-container {
+  margin-bottom: 90px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 2em;
 }
 
 .card {
   margin-top: 49px;
-  margin-left: 37px;
+  margin-left: 17px;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: column; 
+  position: relative;
   border-radius: 9px;
 }
+.card .card-badge {
+  position: absolute;
+  font-size: 8px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.545);
+  padding: 2px 4px;
+  border-radius: 2px;
+  top: 6px;
+  left: 6px;
+}
 .card img {
-  width: 176px;
+  width: 100%;
   height: 235px;
+  border-radius: 9px;
+
 }
 .card .card-info  p {
   margin-top: 9px;
